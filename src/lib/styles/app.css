@@ -1,0 +1,165 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+	*,
+	::after,
+	::before {
+		@apply box-border;
+	}
+
+	html {
+		@apply overflow-x-hidden !overflow-y-scroll overscroll-none !scroll-smooth;
+	}
+
+	body {
+		@apply m-2 block select-none !overflow-x-hidden !overscroll-none !scroll-smooth bg-white font-catamaran text-base font-light leading-[25px] text-secondary antialiased;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply uppercase tracking-[0.125em] text-primary;
+	}
+
+	h1 {
+		@apply text-[45px] leading-[58px] tracking-[5px];
+	}
+
+	h2 {
+		@apply text-3xl leading-[48px] tracking-[3.7px];
+	}
+
+	h3 {
+		@apply text-2xl leading-9 tracking-[2px];
+	}
+
+	h4 {
+		@apply text-base leading-[25px];
+	}
+
+	h5 {
+		@apply text-[14.5px] leading-[22px];
+	}
+
+	h6 {
+		@apply text-[12.3px] leading-[18px];
+	}
+
+	h1 a:hover,
+	h2 a:hover,
+	h3 a:hover,
+	h4 a:hover,
+	h5 a:hover,
+	h6 a:hover {
+		@apply text-primary;
+	}
+
+	a,
+	p a {
+		@apply text-primary no-underline transition-all duration-[0.3s] ease-in-out;
+	}
+
+	p {
+		@apply m-[10px_0];
+	}
+
+	a,
+	abbr,
+	acronym,
+	address,
+	applet,
+	b,
+	big,
+	blockquote,
+	body,
+	caption,
+	center,
+	cite,
+	code,
+	dd,
+	del,
+	dfn,
+	div,
+	dl,
+	dt,
+	em,
+	fieldset,
+	font,
+	form,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	html,
+	i,
+	iframe,
+	ins,
+	kbd,
+	label,
+	legend,
+	li,
+	object,
+	ol,
+	p,
+	pre,
+	q,
+	s,
+	samp,
+	small,
+	span,
+	strike,
+	strong,
+	sub,
+	sup,
+	table,
+	tbody,
+	td,
+	tfoot,
+	th,
+	thead,
+	tr,
+	tt,
+	u,
+	ul,
+	var {
+		@apply m-0 border-0 bg-[0_0] p-0 align-baseline outline-0;
+	}
+
+	ol,
+	ul {
+		@apply list-inside;
+	}
+
+	article,
+	aside,
+	details,
+	figcaption,
+	figure,
+	footer,
+	header,
+	nav,
+	section {
+		@apply block;
+	}
+}
+
+@layer components {
+	.container {
+		@apply mx-auto w-full max-w-full p-[0_100px] px-[calc(1.5rem*0.5)] sm:max-w-[720px] md:max-w-[960px] lg:max-w-[1140px] xl:max-w-[1320px] 2xl:max-w-[1500px];
+	}
+
+	.row {
+		@apply mx-[calc(-0.5*1.5rem)] mt-[calc(-1*0)] flex flex-wrap;
+	}
+
+	.row > * {
+		@apply mt-[0] max-w-full px-[calc(1.5rem*0.5)];
+	}
+}
