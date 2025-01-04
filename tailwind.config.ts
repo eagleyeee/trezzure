@@ -68,7 +68,7 @@ export default {
 			xl: '1200px',
 			// => @media (min-width: 1200px) { ... }
 
-			'2xl': '1425px'
+			'2xl': '1400px'
 			// => @media (min-width: 1400px) { ... }
 		}
 	},
