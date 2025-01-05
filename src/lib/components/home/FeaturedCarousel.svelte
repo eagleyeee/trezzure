@@ -114,7 +114,7 @@
 								>
 									<h4 class="font font-bold text-primary">{product.name}</h4>
 									<div
-										class="flex h-auto flex-col items-center justify-center gap-0 overflow-hidden text-center align-middle"
+										class="mt-2 flex h-auto flex-col items-center justify-center gap-0 overflow-hidden text-center align-middle"
 									>
 										<button
 											aria-label="add-to-cart"
