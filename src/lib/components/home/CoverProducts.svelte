@@ -4,8 +4,10 @@
 	import bannerImage3 from '$lib/assets/images/banner-img-3.jpg';
 </script>
 
-<section class="pb-[30px]">
-	<div class="banner-product grid grid-cols-3 grid-rows-2 gap-[30px]">
+<section>
+	<div
+		class="banner-product grid grid-cols-2 grid-rows-3 gap-7 pb-[30px] lg:grid-cols-3 lg:grid-rows-2"
+	>
 		<a href="/" class="group col-span-2 row-span-2">
 			<div class="details">
 				<div class="mt-1 flex flex-row gap-1 text-left align-middle">
@@ -55,7 +57,7 @@
 	}
 
 	.banner-product > a > .details {
-		@apply absolute flex flex-col px-[25px] py-5;
+		@apply absolute flex flex-col px-[21px] py-4 xl:px-[25px] xl:py-5;
 	}
 
 	.banner-product > a > .details > p {

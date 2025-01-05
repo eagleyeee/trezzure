@@ -2,6 +2,7 @@
 	import CoverProducts from '$lib/components/home/CoverProducts.svelte';
 	import ClientsCarousel from '$lib/components/home/ClientsCarousel.svelte';
 	import FeaturedCarousel from '$lib/components/home/FeaturedCarousel.svelte';
+	import TestimonialCarousel from '$lib/components/home/TestimonialCarousel.svelte';
 </script>
 
 <div class="container mt-16 pt-20">
@@ -23,8 +24,8 @@
 	<!--Featured Product Carousel Section-->
 	<FeaturedCarousel />
 
-	<!--Featured Product Silder Section-->
-	<section class=""></section>
+	<!--Testimonial Carousel Section-->
+	<TestimonialCarousel />
 
 	<!--Clients Carousel Section-->
 	<ClientsCarousel />

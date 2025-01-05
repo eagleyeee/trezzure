@@ -152,7 +152,7 @@
 
 @layer components {
 	.container {
-		@apply mx-auto w-full max-w-full p-[0_100px] px-[calc(1.5rem*0.5)] sm:max-w-[720px] md:max-w-[960px] lg:max-w-[1140px] xl:max-w-[1320px] 2xl:max-w-[1500px];
+		@apply mx-auto w-full max-w-full p-[0_100px] px-[calc(4rem*0.5)] sm:max-w-[720px] md:max-w-[960px] lg:max-w-[1140px] xl:max-w-[1320px] 2xl:max-w-[1500px];
 	}
 
 	.row {

@@ -17,6 +17,7 @@
 			<a href="/" aria-label="trezzure-logo">
 				<img src={tezzureLogo} class="h-12" alt="trezzure-logo" />
 			</a>
+
 			<Nav />
 			<div class="flex flex-row gap-4">
 				{@render headerButtons()}

@@ -8,7 +8,7 @@
 	];
 </script>
 
-<nav>
+<nav class="hidden lg:block">
 	<ul class="flex flex-row justify-between gap-11 p-5">
 		{#each menuLinks as item}
 			<li

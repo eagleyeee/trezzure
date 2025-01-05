@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { Splide, SplideTrack, SplideSlide } from '@splidejs/svelte-splide';
+	import '@splidejs/svelte-splide/css';
+
 	import clientLogo1 from '$lib/assets/images/clients/client-1.png';
 	import clientLogo2 from '$lib/assets/images/clients/client-2.png';
 	import clientLogo4 from '$lib/assets/images/clients/client-4.png';
@@ -19,41 +22,43 @@
 </script>
 
 <section>
-	<div class="flex flex-row justify-between overflow-x-scroll px-4 py-24">
-		{#each clients as client}
-			<a
-				href="/"
-				aria-label="client-logo"
-				class="group/client flex w-[206px] flex-row overflow-hidden"
-			>
-				<div
-					class="flex w-[206px] translate-x-[-206px] flex-row transition-all duration-[0.8s] ease-in-out group-hover/client:translate-x-0"
-				>
-					<img src={client.logo} alt="client-logo" width="206px" class="w-[206px] opacity-100" />
-					<img src={client.logo} alt="client-logo" width="206px" class="w-[206px] opacity-25" />
-				</div>
-			</a>
-		{/each}
+	<div class="block w-full overflow-hidden px-4 py-24">
+		<Splide
+			options={{
+				rewind: true,
+				autoplay: false,
+				type: 'loop',
+				pagination: false,
+				perPage: 5,
+				perMove: 1,
+				speed: 1200,
+				flickMaxPages: 1,
+				arrows: false,
+				gap: '0px'
+			}}
+			hasTrack={false}
+		>
+			<SplideTrack>
+				{#each clients as client}
+					<SplideSlide>
+						<a
+							href="/"
+							aria-label="client-logo"
+							class="group/client flex w-full flex-row overflow-hidden"
+						>
+							<div
+								class="flex w-full translate-x-[-100%] flex-row transition-all duration-[0.8s] ease-in-out group-hover/client:translate-x-0"
+							>
+								<img src={client.logo} alt="client-logo" width="206px" class="w-full opacity-100" />
+								<img src={client.logo} alt="client-logo" width="206px" class="w-full opacity-25" />
+							</div>
+						</a>
+					</SplideSlide>
+				{/each}
+			</SplideTrack>
+		</Splide>
 	</div>
 </section>
 
-<!--
-<a
-				href="/"
-				aria-label="client-logo"
-				class="group/client flex w-[206px] translate-x-[-206px] flex-row hover:translate-x-0"
-			>
-				<div class="flex flex-row overflow-hidden">
-					<img
-						src={client.logo}
-						alt="client-logo"
-						class="w-[206px] translate-x-[-206px] opacity-0 group-hover/client:translate-x-0 group-hover/client:opacity-100"
-					/>
-					<img
-						src={client.logo}
-						alt="client-logo"
-						class="w-[206px] translate-x-[-206px] opacity-25 group-hover/client:translate-x-0"
-					/>
-				</div>
-			</a>
--->
+<style>
+</style>
