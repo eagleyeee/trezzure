@@ -25,6 +25,7 @@
 			price: '160',
 			image: product3,
 			onSale: true,
+			onSalePrice: '125',
 			newLaunched: false
 		},
 		{
@@ -36,7 +37,15 @@
 			newLaunched: false
 		},
 		{ id: 5, name: 'Wall Clock', price: '120', image: product5, onSale: false, newLaunched: true },
-		{ id: 6, name: 'Flower Vase', price: '125', image: product6, onSale: true, newLaunched: true }
+		{
+			id: 6,
+			name: 'Flower Vase',
+			price: '125',
+			image: product6,
+			onSale: true,
+			onSalePrice: '95',
+			newLaunched: true
+		}
 	];
 </script>
 
@@ -105,19 +114,20 @@
 								>
 									<h4 class="font font-bold text-primary">{product.name}</h4>
 									<div
-										class="flex h-10 flex-row items-center justify-center gap-0 overflow-hidden text-center"
+										class="flex h-auto flex-col items-center justify-center gap-0 overflow-hidden text-center align-middle"
 									>
 										<button
 											aria-label="add-to-cart"
-											class="relative inline-block h-8 -translate-x-12 bg-[#555] px-2 text-center align-middle text-[12.5px] font-semibold uppercase leading-4 tracking-widest text-white opacity-0 transition-all duration-[0.3s] ease-in-out group-hover/featured-carousel:translate-x-[13px] group-hover/featured-carousel:opacity-100 hover:bg-primary"
+											class="relative inline-block h-8 -translate-y-[32px] bg-[#555] px-2 text-center align-middle text-[12.5px] font-semibold uppercase leading-4 tracking-widest text-white opacity-0 transition-all duration-[0.3s] ease-in-out group-hover/featured-carousel:translate-y-0 group-hover/featured-carousel:opacity-100 hover:bg-primary"
 										>
 											<span
 												class="icon-[hugeicons--shopping-bag-add] mr-1 size-5 text-center align-middle"
 											></span>Add to Cart</button
 										>
 										<span
-											class="relative inline-block -translate-x-[65px] font-montserrat text-sm text-[#999] transition-all duration-[0.3s] ease-in-out group-hover/featured-carousel:translate-x-8 group-hover/featured-carousel:opacity-0"
-											>${product.price}</span
+											class="relative inline-block -translate-y-8 font-montserrat text-sm text-[#999] transition-all duration-[0.3s] ease-in-out group-hover/featured-carousel:translate-y-8 group-hover/featured-carousel:opacity-0"
+											>{#if product.onSale === true}<del class="mr-2">${product.onSalePrice}</del
+												>{/if}${product.price}</span
 										>
 									</div>
 								</div>
