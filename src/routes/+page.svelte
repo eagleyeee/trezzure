@@ -5,7 +5,7 @@
 	import TestimonialCarousel from '$lib/components/home/TestimonialCarousel.svelte';
 </script>
 
-<div class="container mt-16 pt-20">
+<div class="container mt-16">
 	<!--Cover Products Section-->
 	<CoverProducts />
 

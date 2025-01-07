@@ -9,6 +9,8 @@
 	import product5 from '$lib/assets/images/featured-products/product-5.jpg';
 	import product6 from '$lib/assets/images/featured-products/product-6.jpg';
 
+	let screenWidth = $state();
+
 	const featuredProducts = [
 		{ id: 1, name: 'Deco Chair', price: '240', image: product1, onSale: false, newLaunched: false },
 		{
@@ -49,6 +51,8 @@
 	];
 </script>
 
+<svelte:window bind:innerWidth={screenWidth} />
+
 <!--Featured Product Carousel Section-->
 <section>
 	<div class="pb-16">
@@ -58,8 +62,8 @@
 				autoplay: false,
 				type: 'loop',
 				pagination: false,
-				perPage: 3,
-				perMove: 3,
+				perPage: screenWidth < 768 ? 1 : screenWidth < 992 ? 2 : 3,
+				perMove: screenWidth < 768 ? 1 : screenWidth < 992 ? 2 : 3,
 				speed: 1200,
 				flickMaxPages: 1,
 				arrows: true,

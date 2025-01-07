@@ -4,7 +4,7 @@
 
 <form
 	transition:fade={{ duration: 200 }}
-	class="fixed right-[222px] top-16 z-[1000] box-border w-72 bg-dark text-center"
+	class="fixed right-[240px] top-16 z-[1000] box-border w-72 bg-dark text-center"
 >
 	<div class="flex flex-row justify-between py-1.5 pl-2.5 pr-5">
 		<input

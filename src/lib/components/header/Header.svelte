@@ -15,11 +15,11 @@
 	<div class="container">
 		<div class="flex flex-row items-center justify-between align-middle">
 			<a href="/" aria-label="trezzure-logo">
-				<img src={tezzureLogo} class="h-12" alt="trezzure-logo" />
+				<img src={tezzureLogo} class="h-10 sm:h-12" alt="trezzure-logo" />
 			</a>
 
 			<Nav />
-			<div class="flex flex-row gap-4">
+			<div class="flex flex-row gap-3 py-6 sm:gap-4 sm:py-5">
 				{@render headerButtons()}
 			</div>
 		</div>

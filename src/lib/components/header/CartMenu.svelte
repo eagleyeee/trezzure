@@ -14,7 +14,7 @@
 
 <section
 	transition:fade={{ duration: 200 }}
-	class="fixed right-[142px] top-16 z-[1000] box-border w-72 bg-dark text-left"
+	class="fixed right-[160px] top-16 z-[1000] box-border w-72 bg-dark text-left"
 >
 	<ul class="cart-items relative m-[25px] flex flex-col gap-6 p-0">
 		{#each cartProductsList as product}

@@ -25,12 +25,14 @@
 </script>
 
 <section>
-	<div class="group/client-carousel box-border block bg-[#f3f3f3] px-1 py-24">
+	<div
+		class="group/client-carousel relative flex w-full flex-col items-center justify-center overflow-hidden bg-[#f3f3f3] px-1 py-24"
+	>
 		<h3 class="text-center font-semibold tracking-wider text-primary">What They're Saying</h3>
 		<Splide
 			options={{
 				rewind: true,
-				autoplay: true,
+				autoplay: false,
 				type: 'loop',
 				pagination: false,
 				perPage: 1,
@@ -38,21 +40,25 @@
 				speed: 1200,
 				flickMaxPages: 1,
 				arrows: true,
-				gap: '0'
+				gap: '26px'
 			}}
 			hasTrack={false}
 		>
 			<SplideTrack>
 				{#each clientReviews as client}
-					<SplideSlide>
-						<div class="flex flex-col items-center justify-center p-12 align-middle">
-							<div class="mb-[10px] mt-[30px] block items-center text-wrap">
+					<SplideSlide
+						><!--w-full items-center justify-center p-12 text-center align-middle-->
+						<div
+							class="relative flex w-full flex-col items-center justify-center overflow-hidden px-14"
+						>
+							<!--block w-[70%] text-center -->
+							<div class="mx-auto mb-[10px] mt-[30px] w-[70%]">
 								<p class="text-center leading-[30px] text-secondary">
 									{client.summary}
 								</p>
 							</div>
 
-							<div class="mt-[10px] flex flex-col justify-center text-center">
+							<div class="mt-[10px] flex w-full flex-col items-center justify-center">
 								<h5 class="mt-5 font-bold uppercase text-primary">{client.name}</h5>
 								<h6 class="my-2 font-normal normal-case">{client.position}</h6>
 							</div>
@@ -80,6 +86,10 @@
 </section>
 
 <style>
+	.splide__slide {
+		@apply !w-[1200px];
+	}
+
 	.custom-arrow {
 		@apply !size-8 !rounded-none !bg-transparent;
 	}

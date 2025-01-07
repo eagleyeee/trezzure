@@ -57,17 +57,17 @@
 
 <Header {tezzureLogo}>
 	{#snippet headerButtons()}
-		<button onclick={toggleSearchForm} class="size-6" aria-label="search">
-			<span class="icon-[hugeicons--search-01] size-6 text-primary"></span>
+		<button onclick={toggleSearchForm} class="size-[18px] sm:size-6" aria-label="search">
+			<span class="icon-[hugeicons--search-01] size-[18px] text-primary sm:size-6"></span>
 		</button>
-		<a href="/login" class="size-6" aria-label="user-account">
-			<span class="icon-[hugeicons--user] size-6 text-primary"></span>
+		<a href="/login" class="size-[18px] sm:size-6" aria-label="user-account">
+			<span class="icon-[hugeicons--user] size-[18px] text-primary sm:size-6"></span>
 		</a>
-		<button onclick={toggleCartMenu} class="size-6" aria-label="cart-menu">
-			<span class="icon-[hugeicons--shopping-bag-02] size-6 text-primary"></span>
+		<button onclick={toggleCartMenu} class="size-[18px] sm:size-6" aria-label="cart-menu">
+			<span class="icon-[hugeicons--shopping-bag-02] size-[18px] text-primary sm:size-6"></span>
 		</button>
-		<button onclick={openSideBar} class="size-6" aria-label="side-bar">
-			<span class="icon-[hugeicons--menu-03] size-6 text-primary"></span>
+		<button onclick={openSideBar} class="size-[18px] sm:size-6" aria-label="side-bar">
+			<span class="icon-[hugeicons--menu-03] size-[18px] text-primary sm:size-6"></span>
 		</button>
 	{/snippet}
 </Header>

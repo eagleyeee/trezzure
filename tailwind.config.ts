@@ -56,6 +56,9 @@ export default {
 			}
 		},
 		screens: {
+			xs: '340px',
+			// => @media (min-width: 340px) { ... }
+
 			sm: '576px',
 			// => @media (min-width: 576px) { ... }
 

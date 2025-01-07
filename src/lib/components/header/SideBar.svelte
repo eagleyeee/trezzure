@@ -10,7 +10,7 @@
 
 <section
 	transition:fly={{ x: 600, duration: 600 }}
-	class="fixed inset-y-0 right-0 z-[1000] h-full w-[605px] bg-dark p-[66px_62px]"
+	class="fixed inset-y-0 right-0 z-[1000] h-screen w-screen bg-dark p-[66px_62px] lg:w-[605px]"
 >
 	<button
 		onclick={closeSideBar}

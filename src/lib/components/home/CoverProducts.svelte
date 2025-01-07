@@ -6,9 +6,9 @@
 
 <section>
 	<div
-		class="banner-product grid grid-cols-2 grid-rows-3 gap-7 pb-[30px] lg:grid-cols-3 lg:grid-rows-2"
+		class="banner-product grid grid-cols-1 grid-rows-3 gap-7 pb-[30px] md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2"
 	>
-		<a href="/" class="group col-span-2 row-span-2">
+		<a href="/" class="group col-span-1 row-span-1 md:col-span-2 md:row-span-2">
 			<div class="details">
 				<div class="mt-1 flex flex-row gap-1 text-left align-middle">
 					<span
