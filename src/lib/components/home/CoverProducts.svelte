@@ -57,15 +57,15 @@
 	}
 
 	.banner-product > a > .details {
-		@apply absolute flex flex-col px-[21px] py-4 xl:px-[25px] xl:py-5;
+		@apply absolute flex flex-col px-[15px] py-[10px] sm:px-[21px] sm:py-4 xl:px-[25px] xl:py-5;
 	}
 
 	.banner-product > a > .details > p {
-		@apply mt-[6px] text-xs font-bold leading-[1em] tracking-[1.5px] text-secondary;
+		@apply mt-1 text-xs font-bold leading-[1em] tracking-[1.5px] text-secondary sm:mt-[6px];
 	}
 
 	.banner-product > a > .details h5 {
-		@apply overflow-hidden align-middle font-bold uppercase tracking-widest text-primary transition-all duration-[0.2s] ease-in-out;
+		@apply overflow-hidden align-middle text-[13px] font-bold uppercase leading-[18px] tracking-[0.075em] text-primary transition-all duration-[0.2s] ease-in-out sm:text-[14.5px] sm:leading-[22px] sm:tracking-widest;
 	}
 
 	.banner-product > a > .details span {

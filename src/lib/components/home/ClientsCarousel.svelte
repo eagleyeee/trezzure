@@ -29,8 +29,13 @@
 				autoplay: false,
 				type: 'loop',
 				pagination: false,
-				perPage: 5,
+				perPage: 6,
 				perMove: 1,
+				breakpoints: {
+					991: { perPage: 5 },
+					767: { perPage: 4 },
+					575: { perPage: 2 }
+				},
 				speed: 1200,
 				flickMaxPages: 1,
 				arrows: false,

@@ -50,7 +50,9 @@
 	class="relative box-border block w-full border-t border-solid border-[rgba(206,206,206,.2)] bg-white pt-[95px] text-secondary"
 >
 	<div class="container">
-		<div class="footer-flex flex flex-row justify-between gap-[30px] px-4 align-middle">
+		<div
+			class="footer-flex flex flex-col items-center justify-center gap-0 px-4 align-middle sm:flex-row sm:justify-between sm:gap-[30px]"
+		>
 			{#each footerMenus as menu}
 				<div class="inner-flex flex flex-col">
 					<h4>{menu.title}</h4>

@@ -28,7 +28,7 @@
 	<div
 		class="group/client-carousel relative flex w-full flex-col items-center justify-center overflow-hidden bg-[#f3f3f3] px-1 py-24"
 	>
-		<h3 class="text-center font-semibold tracking-wider text-primary">What They're Saying</h3>
+		<h3 class="px-6 text-center font-semibold tracking-wider text-primary">What They're Saying</h3>
 		<Splide
 			options={{
 				rewind: true,
@@ -52,7 +52,7 @@
 							class="relative flex w-full flex-col items-center justify-center overflow-hidden px-14"
 						>
 							<!--block w-[70%] text-center -->
-							<div class="mx-auto mb-[10px] mt-[30px] w-[70%]">
+							<div class="mx-auto mb-[10px] mt-[30px] w-[12%] sm:w-[24%] md:w-[36%] lg:w-[50%]">
 								<p class="text-center leading-[30px] text-secondary">
 									{client.summary}
 								</p>

@@ -14,7 +14,7 @@
 		<div class="flex flex-col gap-[14px]">
 			<h5 class="text-center font-bold tracking-widest">Welcome to Trezzure</h5>
 			<p
-				class="block px-[25%] text-center text-3xl normal-case leading-[45px] tracking-normal text-[#929292]"
+				class="block px-[25%] text-center text-xl normal-case leading-8 tracking-normal text-[#929292] sm:text-2xl sm:leading-9 md:text-3xl md:leading-[45px]"
 			>
 				Marketing is not selling. Marketing is building a brand in the mind of the prospect.
 			</p>
